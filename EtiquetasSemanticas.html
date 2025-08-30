@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegación lateral</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column; /* Header arriba, luego contenido */
+      min-height: 100vh;
+    }
+
+    /* Header arriba */
+    header {
+      background-color: #0077b6; /* azul */
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Contenedor principal (main + nav) */
+    .container {
+      flex: 1;
+      display: flex;
+    }
+
+    /* Contenido */
+    main {
+      flex: 1;
+      padding: 30px;
+      background-color: #f0f0f0;
+    }
+
+    /* Nav lateral derecho */
+    nav {
+      background-color: #2a9d8f; /* verde */
+      width: 200px;
+      padding: 20px 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* Vertical */
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: block;
+      padding: 8px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffdd57; 
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333; 
+      color: #ddd;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Encabezado (Header)</h1>
+  </header>
+
+  <div class="container">
+    <main>
+      <h2>Contenido principal</h2>
+      <p>Este es el área de contenido. A la derecha está el menú vertical.</p>
+    </main>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
